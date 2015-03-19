@@ -14,6 +14,7 @@
 		33D4175C1ABB79B3003200E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D4175B1ABB79B3003200E4 /* Images.xcassets */; };
 		33D4175F1ABB79B3003200E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D4175D1ABB79B3003200E4 /* LaunchScreen.xib */; };
 		33D4176B1ABB79B3003200E4 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D4176A1ABB79B3003200E4 /* FarkleTests.m */; };
+		33D417761ABB79D5003200E4 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D417751ABB79D5003200E4 /* DieLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		33D417641ABB79B3003200E4 /* FarkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D417691ABB79B3003200E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D4176A1ABB79B3003200E4 /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
+		33D417741ABB79D5003200E4 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DieLabel.h; path = ../DieLabel.h; sourceTree = "<group>"; };
+		33D417751ABB79D5003200E4 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DieLabel.m; path = ../DieLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				33D417531ABB79B3003200E4 /* AppDelegate.m */,
 				33D417551ABB79B3003200E4 /* ViewController.h */,
 				33D417561ABB79B3003200E4 /* ViewController.m */,
+				33D417741ABB79D5003200E4 /* DieLabel.h */,
+				33D417751ABB79D5003200E4 /* DieLabel.m */,
 				33D417581ABB79B3003200E4 /* Main.storyboard */,
 				33D4175B1ABB79B3003200E4 /* Images.xcassets */,
 				33D4175D1ABB79B3003200E4 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				33D417571ABB79B3003200E4 /* ViewController.m in Sources */,
 				33D417541ABB79B3003200E4 /* AppDelegate.m in Sources */,
 				33D417511ABB79B3003200E4 /* main.m in Sources */,
+				33D417761ABB79D5003200E4 /* DieLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

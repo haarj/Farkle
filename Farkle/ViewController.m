@@ -20,14 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSLog(@"%d", self.dieLabels.count);
+//    NSLog(@"%d", self.dieLabels.count);
+//
+//    for (DieLabel *a in self.dieLabels) {
+//        int i = (arc4random()%6)+1;
+//        a.text = [NSString stringWithFormat:@"%d", i];
+//        NSLog(@"%@", a.text);
+//    }
 
-    for (DieLabel *a in self.dieLabels) {
-        int i = (arc4random()%6)+1;
-        a.text = [NSString stringWithFormat:@"%d", i];
-        NSLog(@"%@", a.text);
+
+
+}
+- (IBAction)onRollButtonPressed:(DieLabel *)sender {
+
+    for (DieLabel *label in self.dieLabels) {
+        [label roll];
     }
-//    [[self.dieLabels objectAtIndex:1] setTitle:[NSString stringWithFormat:@"%d", i]];
 
 
 }

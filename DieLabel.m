@@ -19,10 +19,9 @@
 
 -(void)roll
 {
-//    self.number = (arc4random()%6)+1; 
-//    NSString *string = [NSString stringWithFormat:@"%i", self.number];
-//    self.label.text = string;
-//    NSLog(@"%i", self.number);
+    int i = (arc4random()%6)+1;
+    self.text = [NSString stringWithFormat:@"%d", i];
+
     
 }
 

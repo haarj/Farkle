@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DieLabel.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *dieLabels;
 
 @end
 
@@ -16,12 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"%d", self.dieLabels.count);
+
+    for (DieLabel *a in self.dieLabels) {
+        int i = (arc4random()%6)+1;
+        a.text = [NSString stringWithFormat:@"%d", i];
+        NSLog(@"%@", a.text);
+    }
+//    [[self.dieLabels objectAtIndex:1] setTitle:[NSString stringWithFormat:@"%d", i]];
+
+
 }
 
 @end

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,154 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-4P-rzI" customClass="DieLabel">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.062860436478918258" green="0.64977059414346261" blue="0.82554056186868685" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="275" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vdd-4B-bAh" appends="YES" id="K4J-Fm-OZA"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pe-qy-unW" customClass="DieLabel">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.062860436480000004" green="0.64977059410000004" blue="0.82554056190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="275" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BUo-K4-mTM" appends="YES" id="hpd-6B-88m"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdG-0M-KSB" customClass="DieLabel">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.062860436480000004" green="0.64977059410000004" blue="0.82554056190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="243" y="275" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eSz-br-snO" appends="YES" id="3bh-rA-Mp3"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-Bi-Qvt" customClass="DieLabel">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.062860436480000004" green="0.64977059410000004" blue="0.82554056190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="175" y="346" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="J7K-rI-7Ys" appends="YES" id="ly2-s1-ZAn"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrJ-H2-X7v" customClass="DieLabel">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.062860436480000004" green="0.64977059410000004" blue="0.82554056190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="243" y="346" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="N0B-xZ-JSc" appends="YES" id="rXc-w7-Vim"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyF-KS-LzS" customClass="DieLabel">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.062860436480000004" green="0.64977059410000004" blue="0.82554056190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="346" width="50" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="O2C-w3-nz9" appends="YES" id="Pp6-w4-vDU"/>
+                                </connections>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4pe-qy-unW"/>
+                                <exclude reference="KdG-0M-KSB"/>
+                                <exclude reference="XaJ-Bi-Qvt"/>
+                                <exclude reference="IrJ-H2-X7v"/>
+                                <exclude reference="qyF-KS-LzS"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4pe-qy-unW"/>
+                                <include reference="KdG-0M-KSB"/>
+                                <include reference="XaJ-Bi-Qvt"/>
+                                <include reference="IrJ-H2-X7v"/>
+                                <include reference="qyF-KS-LzS"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outletCollection property="dieLabels" destination="b4h-4P-rzI" id="Eb9-Pq-YCz"/>
+                        <outletCollection property="dieLabels" destination="4pe-qy-unW" id="3dj-Jx-wCV"/>
+                        <outletCollection property="dieLabels" destination="KdG-0M-KSB" id="4O2-s6-3wT"/>
+                        <outletCollection property="dieLabels" destination="qyF-KS-LzS" id="Rvs-vS-cHd"/>
+                        <outletCollection property="dieLabels" destination="XaJ-Bi-Qvt" id="YdE-Vg-BSd"/>
+                        <outletCollection property="dieLabels" destination="IrJ-H2-X7v" id="bgb-v1-lcE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vdd-4B-bAh" userLabel="Tap Gesture Recognizer (1)">
+                    <connections>
+                        <action selector="onTapped:" destination="b4h-4P-rzI" id="71P-37-Cm5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BUo-K4-mTM" userLabel="Tap Gesture Recognizer (2)">
+                    <connections>
+                        <action selector="onTapped:" destination="4pe-qy-unW" id="e8Z-Ej-ufb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eSz-br-snO" userLabel="Tap Gesture Recognizer (3)">
+                    <connections>
+                        <action selector="onTapped:" destination="KdG-0M-KSB" id="fVY-G6-XOl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="O2C-w3-nz9" userLabel="Tap Gesture Recognizer (4)">
+                    <connections>
+                        <action selector="onTapped:" destination="qyF-KS-LzS" id="rE8-si-RZH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="J7K-rI-7Ys" userLabel="Tap Gesture Recognizer (5)">
+                    <connections>
+                        <action selector="onTapped:" destination="XaJ-Bi-Qvt" id="qOq-ay-nR3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="N0B-xZ-JSc" userLabel="Tap Gesture Recognizer (6)">
+                    <connections>
+                        <action selector="onTapped:" destination="IrJ-H2-X7v" id="vQq-Ia-yYF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="241.5" y="394"/>
         </scene>
     </scenes>
 </document>

@@ -10,12 +10,20 @@
 
 @implementation DieLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(IBAction)onTapped:(UITapGestureRecognizer *)sender
+{
+    [self roll];
+    NSLog(@"number");
 }
-*/
+
+
+-(void)roll
+{
+//    self.number = (arc4random()%6)+1; 
+//    NSString *string = [NSString stringWithFormat:@"%i", self.number];
+//    self.label.text = string;
+//    NSLog(@"%i", self.number);
+    
+}
 
 @end

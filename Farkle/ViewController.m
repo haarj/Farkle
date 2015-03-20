@@ -9,9 +9,10 @@
 #import "ViewController.h"
 #import "DieLabel.h"
 
-@interface ViewController ()
+@interface ViewController () <DieLabelDelegate>
 
 @property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *dieLabels;
+@property (nonatomic) NSMutableArray *dice;
 
 @end
 
@@ -28,16 +29,24 @@
 //        NSLog(@"%@", a.text);
 //    }
 
-
-
+    for (DieLabel *label in self.dieLabels) {
+        label.delegate = self;
+    }
 }
 - (IBAction)onRollButtonPressed:(DieLabel *)sender {
 
     for (DieLabel *label in self.dieLabels) {
         [label roll];
     }
-
-
+    NSLog(@"Dice %@", self.dice);
 }
 
+#pragma mark - DieLabelDelegate protocols
+
+-(void)dieLabelMethod:(NSString *)text
+{
+    NSLog(@"yes");
+    [self.dice addObject:text];
+
+}
 @end

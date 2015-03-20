@@ -22,7 +22,8 @@
     int i = (arc4random()%6)+1;
     self.text = [NSString stringWithFormat:@"%d", i];
 
-    
+    [self.delegate dieLabelMethod:self.text];
 }
+
 
 @end

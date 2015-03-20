@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DieLabelDelegate <NSObject>
+@required
+-(void) dieLabelMethod:(NSString *)text;
+
+
+@end
+
 @interface DieLabel : UILabel
 
 -(void)roll;
+
+@property id<DieLabelDelegate> delegate;
 
 @end

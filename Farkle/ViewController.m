@@ -32,21 +32,42 @@
     for (DieLabel *label in self.dieLabels) {
         label.delegate = self;
     }
+
+    self.dice = [NSMutableArray new];
+
 }
 - (IBAction)onRollButtonPressed:(DieLabel *)sender {
 
     for (DieLabel *label in self.dieLabels) {
-        [label roll];
+        if (![self.dice containsObject:label]) {
+            [label roll];
+        }
     }
     NSLog(@"Dice %@", self.dice);
 }
 
 #pragma mark - DieLabelDelegate protocols
 
--(void)dieLabelMethod:(NSString *)text
+-(void)dieLabelDelegateMethod:(UITapGestureRecognizer *)sender
 {
-    NSLog(@"yes");
-    [self.dice addObject:text];
+    //one label is tapped toggle locked on lock
+    DieLabel *label = (DieLabel *) sender.view;
+
+
+    if([self.dice containsObject:label]){
+        [self.dice removeObject:label];
+        label.backgroundColor = [UIColor greenColor];
+    } else{
+        [self.dice addObject:label];
+         label.backgroundColor = [UIColor yellowColor];
+    }
+
+     //toggle the lock status
+    label.isLocked = !label.isLocked;
+
+
+
+    NSLog(@"dice count %ld",self.dice.count);
 
 }
 @end

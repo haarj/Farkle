@@ -10,15 +10,17 @@
 
 @protocol DieLabelDelegate <NSObject>
 @required
--(void) dieLabelMethod:(NSString *)text;
 
-
+-(void) dieLabelDelegateMethod:(UITapGestureRecognizer*) sender;
 @end
+
+
 
 @interface DieLabel : UILabel
 
 -(void)roll;
 
 @property id<DieLabelDelegate> delegate;
+@property BOOL isLocked;
 
 @end

@@ -12,17 +12,14 @@
 
 -(IBAction)onTapped:(UITapGestureRecognizer *)sender
 {
-    [self roll];
-    NSLog(@"number");
-}
+    [self.delegate dieLabelDelegateMethod:sender];
 
+}
 
 -(void)roll
 {
     int i = (arc4random()%6)+1;
     self.text = [NSString stringWithFormat:@"%d", i];
-
-    [self.delegate dieLabelMethod:self.text];
 }
 
 

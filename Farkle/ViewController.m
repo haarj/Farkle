@@ -21,13 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    NSLog(@"%d", self.dieLabels.count);
-//
-//    for (DieLabel *a in self.dieLabels) {
-//        int i = (arc4random()%6)+1;
-//        a.text = [NSString stringWithFormat:@"%d", i];
-//        NSLog(@"%@", a.text);
-//    }
 
     for (DieLabel *label in self.dieLabels) {
         label.delegate = self;
@@ -42,6 +35,21 @@
         if (![self.dice containsObject:label]) {
             [label roll];
         }
+    }
+    //if all locked...clear dice array and roll ALL
+    if(self.dieLabels.count == self.dice.count){
+        //all locked....reset
+        for (DieLabel *label in self.dice) {
+            [label roll];
+            label.backgroundColor = [UIColor greenColor];
+        }
+
+        [self.dice removeAllObjects];
+        self.dice = [NSMutableArray new];
+
+
+
+
     }
     NSLog(@"Dice %@", self.dice);
 }
